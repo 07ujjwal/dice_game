@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* 0%, #1864ab 100%  #bf2e34 #228be6*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #1864ab 0%, #d6336c 100%);
+}
+
+nav {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.7s;
+}
+
+.welcome_msg {
+  font-size: 4rem;
+  color: #222;
+  margin: 2rem;
+}
+
+fieldset {
+  width: 35rem;
+  height: auto;
+  border: none;
+}
+
+form {
+  font-size: 2rem;
+  color: black;
+}
+
+.radio_nav {
+  margin: 1rem;
+}
+
+.btn_nav {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  background-color: #1864ab;
+  color: #eee;
+  width: 12rem;
+  height: 5rem;
+  border-radius: 5%;
+  text-align: center;
+  transition: 1s;
+}
+
+.btn_nav:hover {
+  color: #222;
+  background-color: #a5d8ff;
+}
+
+.main {
+  position: relative;
+}
+
+/*.... four players section ..... */
+
+.player_sections_4 {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.35);
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem;
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.player_4 {
+  height: 46vh;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  color: #222;
+}
+
+/*.... two players section ..... */
+
+.player_sections_2 {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.35);
+  gap: 2rem;
+  margin: 3rem;
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.player_2 {
+  height: 90vh;
+  flex: 50%;
+  display: flex;
+  gap: 6rem;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  color: #222;
+}
+
+.player_2 .name {
+  margin: 4rem;
+}
+
+.name {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.score {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #1971c2;
+  margin-bottom: 4rem;
+}
+
+.current {
+  background-color: #1864ab;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 50%;
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: all 0.75s;
+  height: auto;
+}
+
+.current-label {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+.player--active {
+  background-color: rgba(25, 254, 250, 0.35);
+}
+
+.player--active .name {
+  font-weight: 700;
+}
+
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.current-score {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  position: absolute;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: 400;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: none;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.7rem 2.1rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn::first-letter {
+  font-size: 2.2rem;
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+.btn--new {
+  top: 4rem;
+}
+
+.btn--roll--4 {
+  top: 45rem;
+}
+
+.btn--roll--2 {
+  top: 50rem;
+}
+
+.btn--hold--2 {
+  top: 58rem;
+}
+
+.btn--hold--4 {
+  top: 58rem;
+}
+
+.btn--back {
+  bottom: -1rem;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.dice--4 {
+  top: 32rem;
+}
+
+.dice--2 {
+  top: 22rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}

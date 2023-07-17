@@ -1,0 +1,77 @@
+@media (max-width: 47em) {
+  .player_sections_2 {
+    background-color: rgba(255, 255, 255, 0.35);
+    margin: 1rem;
+  }
+
+  body {
+    height: 130vh;
+  }
+
+  .btn--new {
+    top: -2rem;
+  }
+  .player_2 .name {
+    margin-top: 7rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .score {
+    font-size: 4rem;
+  }
+
+  .current {
+    padding: 3rem 1.5rem;
+  }
+
+  .btn--hold--2 {
+    top: 56rem;
+  }
+
+  .btn--back {
+    bottom: -1rem;
+  }
+
+  .btn--back--2 {
+    left: 40rem;
+  }
+
+  .player_sections_4 {
+    gap: 2rem;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    height: 125vh;
+  }
+
+  .player_4 {
+    height: 48vh;
+  }
+
+  .dice--4 {
+    top: 30rem;
+  }
+  .dice--2 {
+    top: 15rem;
+  }
+
+  .btn--hold--2 {
+    top: 50rem;
+  }
+  .btn--hold--4 {
+    top: 78rem;
+    left: 50%;
+  }
+
+  .btn--roll--4 {
+    top: 40rem;
+    left: 15%rem;
+  }
+
+  .btn--roll--2 {
+    top: 27rem;
+    font-size: 1.4rem;
+  }
+}

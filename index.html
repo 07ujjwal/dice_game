@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./fevicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <title>Dice_it</title>
+  </head>
+  <body>
+    <nav class="">
+      <p class="welcome_msg">Welcome 😃</p>
+      <form class="input_Form">
+        <fieldset>
+          <legend>Select the number of players!</legend>
+          <div class="radio_nav">
+            <input
+              type="radio"
+              id="dual_player"
+              name="game_type"
+              value="2"
+              checked
+            />
+            <label for="dual_player">🥈Duo..</label>
+          </div>
+          <div class="radio_nav">
+            <input type="radio" id="four_player" name="game_type" value="4" />
+            <label for="four_player">4️⃣Gang....</label>
+          </div>
+          <button class="btn_nav" type="submit">Let's Play</button>
+        </fieldset>
+      </form>
+      <pre id="log"></pre>
+    </nav>
+
+    <main class="main hidden">
+      <div class="player_sections player_sections_4">
+        <section class="player player_4 player--0 player--active">
+          <h2 class="name" id="name--0">Player-1</h2>
+          <p class="score" id="score--0">43</p>
+
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </section>
+
+        <section class="player player_4 player--1">
+          <h2 class="name" id="name--1">Player-2</h2>
+          <p class="score" id="score--1">24</p>
+
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </section>
+      </div>
+
+      <img
+        src="./img/dice-5.png"
+        alt="Playing dice"
+        class="dice dice--4 hidden"
+      />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll--4" id="btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold--4" id="btn--hold">📥 Hold</button>
+      <button class="btn btn--back">🔙 Back</button>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
